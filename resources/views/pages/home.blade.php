@@ -10,6 +10,8 @@
         <br><hr><br>
     @endauth
 
+    @guest
+
     <h2>Registrazione</h2>
     <form action="{{ route('register') }}" method="POST">
         @method('POST')
@@ -41,5 +43,7 @@
         <br>
         <input type="submit" value="LOGIN">
     </form>
+
+    @endguest
 
 @endsection
